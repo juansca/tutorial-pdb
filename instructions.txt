@@ -1,0 +1,8 @@
+
+Su jefe le ha dado el siguiente proyecto para arreglarlo para un cliente. Se supone que es un simple juego de dados
+donde el objetivo del juego es sumar correctamente los valores de los dados durante 6 turnos consecutivos.
+
+El problema es que un ex programador trabajó en él y no sabía cómo depurar correctamente. Ahora depende de
+usted el corregir los errores y finalmente hacer el juego jugable.
+
+Para jugar sólo debe correr el archivo main.py
