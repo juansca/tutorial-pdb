@@ -661,3 +661,13 @@ mode at the uncaught exception.
 ## The End
 
 Congrats on making it to the end and thank you for following along in this tutorial! If you have any comments, critiques, or additional advanced examples, I'm open to pull requests.
+
+
+
+
+# Agradecimientos
+* Este tutorial fué realizado para ser usado como trabajo práctico de Materia
+"Ingeniería del Software" del 3er año de la Carrera de Desarrollo de Software
+del Instituto Técnico Superior Córdoba, Córdoba, Argentina.
+* La mayor parte de este estupendo trabajo fué realizado por [Spiro](https://github.com/spiside)
+en su repositorio [pdb-tutorial](https://github.com/spiside/pdb-tutorial)
