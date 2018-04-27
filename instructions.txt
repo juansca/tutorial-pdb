@@ -1,4 +1,3 @@
-
 Su jefe le ha dado el siguiente proyecto para arreglarlo para un cliente. Se supone que es un simple juego de dados
 donde el objetivo del juego es sumar correctamente los valores de los dados durante 6 turnos consecutivos.
 

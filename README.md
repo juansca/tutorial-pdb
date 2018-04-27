@@ -47,44 +47,50 @@ en un entorno de debugging pero el propósito de este tutorial es ensuciarse ant
 de comenzar a usar `pdb` en tu propio código!
 
 
-## Playing the Game
+## Jugando al Juego
 
-So we already talked about the purpose of a debugger and now it's time to see it in action. First, you
-should clone this repo if you haven't already done so. If you don't have `git` installed, I recommend using
-it (or some version of source control) and you can find out details on how to install `git` [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-Once you have `git` installed, clone the repo by entering the following in your terminal:
+Ya hemos hablado sobre el propósito de un debugger y ahora es momento de verlo en
+acción. Primero, debes clonar éste repositorio si todavía no lo hiciste. Si tenés
+`git` instalado, recomiendo usarlo (o alguna versión de control de código). Podés
+encontrar detalles de cómo instalar `git` [acá](https://git-scm.com/book/es/v1/Empezando-Instalando-Git).
+Una vez que tengas `git` instalado, debes clonar el repositorio ejecutando lo
+siguiente en tu terminal:
 
 ```shell
 git clone https://github.com/spiside/pdb-tutorial
 ```
 
-**NB**: If that didn't work for you, you should follow Github's [cloning tutorial](https://help.github.com/articles/cloning-a-repository/).
 
-Now that you have the repo cloned, let's navigate to the root of the project and take a look at the instructions given:
+Si eso no te funcionó, puede probar con el siguiente [tutoria para clonar](https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git)
+
+Ahora que ya tenés el repositorio clonado, debes navegar a la raíz del proyecto
+y leer las instrucciones del juego:
 
 ```shell
 cd /path/to/pdb-tutorial
 ```
 
 `file: instructions.txt`
+
 ```
-Your boss has given you the following project to fix for a client. It's supposed to be a simple dice
-game where the object of the game is to correctly add up the values of the dice for 6 consecutive turns.
+Su jefe le ha dado el siguiente proyecto para arreglarlo para un cliente. Se supone que es un simple juego de dados
+donde el objetivo del juego es sumar correctamente los valores de los dados durante 6 turnos consecutivos.
 
-The issue is that a former programmer worked on it and didn't know how to debug effectively.
-It's now up to you to fix the errors and finally make the game playable.
+El problema es que un ex programador trabajó en él y no sabía cómo depurar correctamente. Ahora depende de
+usted el corregir los errores y finalmente hacer el juego jugable.
 
-To play the game you must run the main.py file.
+Para jugar sólo debe correr el archivo main.py
 ```
 
-Seems easy enough! To begin, let's try playing the game to see what's wrong. To run the program, type the following in your
+Se ve bastante simple! Para empezar, intetemos jugar al juego para ver qué es
+lo que está fallando. Para correr el programa, escribe lo siguiente en tu
 terminal:
 
 ```shell
 python main.py
 ```
 
-You should see something like this:
+Vas a ver algo como lo que sigue:
 
 ```
 Introduce los valores del dado
@@ -120,7 +126,8 @@ Round 1
 Sigh. What is your guess?:
 ```
 
-Seems like the previous programmer had a sense of...humor? Nonetheless, let's enter 17 (since that is the total value of the dice).
+Parece que el programador anterior tenía sentido del humor... Sin embargo,
+intenemos ingresar el número 17 (dado que ese es el valor total de los dados)
 
 ```
 Sigh. What is your guess?: 17
@@ -131,8 +138,12 @@ Wins: 0 Loses 1
 Would you like to play again?[Y/n]:
 ```
 
-Weird. It said the answer is 5 but that's clearly wrong... Alright, maybe the dice addition is wrong but let's play the game again to
-figure it out. Looks like the prompt to play again is `'Y'` so let's enter that now.
+Extraño, no? Dice que la respuesta es 5 pero eso está obviamente mal... Bueno,
+quizás la suma de los dado está mal pero juguemos el juego de nuevo para
+descubrir qué será lo que pasa.
+
+Si miras el prompt, para jugar de nuevo debemos ingresar `'Y'`. Ingresemos eso
+entonces.
 
 ```
 Would you like to play again?[Y/n]: Y
